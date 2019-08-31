@@ -1,7 +1,8 @@
+# Python cache
+__pycache__
+
+# Visual studio code
 .vscode
 
+# Virtual enviroment
 venv
-
-data
-
-results
