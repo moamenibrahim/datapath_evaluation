@@ -18,12 +18,14 @@ for file in files:
     file_number = (re.findall('\d+', file))
 
     # Load measure components
+    file_name = measured_directory + file
     I_stream, Q_stream, sensor_phase_bias = np.load(
-        measured_directory + file, allow_pickle=True, fix_imports=True, encoding='bytes')
+        file_name, allow_pickle=True, encoding='bytes')
 
     # load ground truth phase
-    phase_groundtruth = np.load(
-        truth_directory + 'data_phase_ground_truth_' + file_number[0] + '.npy')
+    file_name = truth_directory + \
+        'data_phase_ground_truth_' + file_number[0] + '.npy'
+    phase_groundtruth = np.load(file_name)
 
     # The original basic datapath applied to data
     measured_phase = -np.arctan2(Q_stream, I_stream)  # compute phase
@@ -50,3 +52,7 @@ for file in files:
     plt.colorbar()
     plt.title("phase noise")
     fig.savefig("results/noise/phase_noise_report_" + file_number[0])
+
+
+class classname(object):
+    pass
