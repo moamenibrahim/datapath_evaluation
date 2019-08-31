@@ -6,3 +6,7 @@ __pycache__
 
 # Virtual enviroment
 venv
+
+# Test residual files
+.pytest_cache
+.coverage
