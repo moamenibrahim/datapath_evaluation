@@ -2,7 +2,7 @@
 Unit tests for the datapath library
 """
 
-import src.main
+import src.datapath_evaluate
 
 
 class TestDatapath:

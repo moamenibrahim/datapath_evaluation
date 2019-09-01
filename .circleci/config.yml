@@ -39,7 +39,7 @@ jobs:
           command: |
             . venv/bin/activate
             flake8 /src --statistics
-            pytest -v test
+            pytest -v tests
 
       - store_artifacts:
           path: test-reports
