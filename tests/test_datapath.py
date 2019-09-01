@@ -7,5 +7,5 @@ import src.datapath_evaluate
 
 class TestDatapath:
 
-    def funcname(self, parameter_list):
-        pass
+    def test_load_components(self):
+        assert True
