@@ -30,6 +30,29 @@ Create a virtual enviroment in the current project folder using python3
 ./init.sh
 ```
 
+## Instructions
+
+First, copy your measured and truth files to the data directory in the project.
+
+```bash
+data/measured/
+data/truth/
+```
+
+Then run the program right away as follows:
+
+```bash
+source venv/bin/activate
+python main.py
+```
+
+Or inject the directories from the terminal as follows:
+
+```bash
+source venv/bin/activate
+python main.py --measured=YOUR_MEASURED_DIR --truth=YOUR_TRUTH_DIR
+```
+
 ## Authors
 
 * [Moamen Ibrahim](https://github.com/moamenibrahim)
