@@ -1,5 +1,7 @@
 # Datapath evaluation tool
 
+[![CircleCI](https://circleci.com/gh/moamenibrahim/datapath_evaluation/tree/master.svg?style=svg)](https://circleci.com/gh/moamenibrahim/datapath_evaluation/tree/master)
+
 Technical evaluation to refactor code developed to create maintainable tool that can be used by other system R&D engineers for evaluation of other datasets and datapaths.
 
 ## About the project
